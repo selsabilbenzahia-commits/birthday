@@ -114,15 +114,15 @@
 
         // يصنع فقاعة حمراء كل 350 ميلي ثانية (باش يجيو بزايد)
         setInterval(createBubble, 350);
-    </script>
-<!-- حطي هنا رابط الأغنية لي حابتها (لازم يخلص بـ .mp3) -->
-<audio id="bgMusic" src="nastelbom-happy-birthday-471481.mp3" loop></audio>
-    // الكود لي يشغل الموسيقى تلقائياً كي يكليكي في الشاشة
-document.addEventListener('click', () => {
+        // الكود لي يشغل الموسيقى تلقائياً كي يكليكي في الشاشة
+      document.addEventListener('click', () => {
     const audio = document.getElementById('bgMusic');
     audio.play().catch(error => {
         console.log("المتصفح منع التشغيل التلقائي حتى يضغط المستخدم على الشاشة.");
     });
 }, { once: true }); // { once: true } باش يصرى هاد الشي مع أول كليكة برك
+    </script>
+<!-- حطي هنا رابط الأغنية لي حابتها (لازم يخلص بـ .mp3) -->
+<audio id="bgMusic" src="nastelbom-happy-birthday-471481.mp3" loop></audio>
 </body>
 </html>
